@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Supreme Dental Clinic &amp; Clinical Laboratory</title>
+<link rel="icon" type="image/png" href="ico.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#1e293b",
+                        "tertiary": "#475569",
+                        "on-surface": "#0f172a",
+                        "outline": "#94a3b8",
+                        "on-secondary-fixed-variant": "#115e59",
+                        "surface-container": "#f1f5f9",
+                        "inverse-primary": "#99f6e4",
+                        "secondary": "#0d9488",
+                        "surface-container-low": "#f8fafc",
+                        "surface": "#ffffff",
+                        "primary": "#008080",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#f0fdfa",
+                        "secondary-fixed-dim": "#2dd4bf",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#5eead4",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#134e4a",
+                        "tertiary-fixed-dim": "#cbd5e1",
+                        "background": "#ffffff",
+                        "on-background": "#0f172a",
+                        "surface-dim": "#e2e8f0",
+                        "surface-variant": "#f1f5f9",
+                        "primary-fixed": "#ccfbf1",
+                        "on-tertiary-fixed": "#0f172a",
+                        "inverse-on-surface": "#f8fafc",
+                        "on-error-container": "#7f1d1d",
+                        "error": "#ef4444",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#334155",
+                        "on-primary-fixed": "#042f2e",
+                        "primary-container": "#0f766e",
+                        "surface-tint": "#008080",
+                        "surface-container-high": "#e2e8f0",
+                        "on-tertiary-fixed-variant": "#334155",
+                        "surface-container-highest": "#f1f5f9",
+                        "surface-bright": "#ffffff",
+                        "tertiary-container": "#64748b",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#cbd5e1",
+                        "on-tertiary-container": "#f8fafc",
+                        "on-secondary-fixed": "#042f2e",
+                        "on-secondary-container": "#115e59",
+                        "secondary-fixed": "#ccfbf1",
+                        "secondary-container": "#99f6e4",
+                        "error-container": "#fee2e2",
+                        "tertiary-fixed": "#f1f5f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-mobile": "64px",
+                        "gutter": "24px",
+                        "container-max-width": "1200px",
+                        "base": "8px",
+                        "section-gap-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-xl": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { scroll-behavior: smooth; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.fill { font-variation-settings: 'FILL' 1; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-6 py-4 max-w-container-max-width mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined fill text-primary">dentistry</span>
+                Supreme Dental Clinic &amp; Lab
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#home">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#testimonials">Testimonials</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+</div>
+<a href="tel:07006323567" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all active:scale-95 shadow-sm hidden md:flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                Book Now
+            </a>
+<button id="mobile-menu-btn" class="md:hidden text-on-surface focus:outline-none">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile Menu Container -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant/30 px-6 py-4 flex-col gap-4 shadow-lg absolute w-full top-full left-0">
+    <a class="text-primary font-bold block py-2" href="#home">Home</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 block py-2" href="#services">Services</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 block py-2" href="#testimonials">Testimonials</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 block py-2" href="#contact">Contact</a>
+    <a href="tel:07006323567" class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all active:scale-95 shadow-sm flex items-center justify-center gap-2 mt-2">
+        <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+        Book Now
+    </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-6 max-w-container-max-width mx-auto flex flex-col-reverse md:flex-row items-center gap-12" id="home">
+<div class="flex-1 flex flex-col gap-6 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/50 w-fit mx-auto md:mx-0">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Accepting New Patients</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">
+                Supreme Dental Clinic &amp; <span class="text-primary block">Clinical Laboratory</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                The Best Dental Care &amp; Diagnostics in Jammu — Precision, Comfort, and Care. Experience expert clinical treatments in a modern, hygienic environment.
+            </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 mt-4 justify-center md:justify-start">
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-3.5 rounded-lg font-label-sm text-label-sm hover:bg-[#20bd5a] transition-all active:scale-95 shadow-lg shadow-[#25D366]/20" href="https://wa.me/9107006323567">
+<span class="material-symbols-outlined">chat</span>
+                    Book via WhatsApp
+                </a>
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 border border-primary text-primary px-8 py-3.5 rounded-lg font-label-sm text-label-sm hover:bg-primary/5 transition-all active:scale-95" href="tel:07006323567">
+<span class="material-symbols-outlined">call</span>
+                    Call Now
+                </a>
+</div>
+<div class="flex items-center gap-6 mt-8 justify-center md:justify-start border-t border-outline-variant/30 pt-8">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">5.0</span>
+<div class="flex text-[#FFB400]">
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+</div>
+</div>
+<div class="h-10 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">500+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Happy Patients</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full max-w-md mx-auto relative">
+<div class="absolute inset-0 bg-primary/10 rounded-[2rem] transform translate-x-4 translate-y-4 -z-10"></div>
+<img alt="Supreme Dental Clinic clinical environment" class="w-full h-auto rounded-[2rem] object-cover shadow-sm border border-outline-variant/20 aspect-[4/5]" src="hero.png"/>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -left-6 bg-surface p-4 rounded-xl shadow-lg border border-outline-variant/20 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary fill">verified</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface">Top Rated Clinic</p>
+<p class="font-body-md text-[12px] text-on-surface-variant">in Jammu</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Highlights / Services -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low border-y border-outline-variant/20" id="services">
+<div class="max-w-container-max-width mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Excellence in Healthcare</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">We combine advanced diagnostics with professional dental expertise to deliver comprehensive treatment under one roof.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Highlight 1 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary/30 hover:shadow-sm transition-all group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">biotech</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-2">Clinical Laboratory</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant">In-house facility offering diagnostic testing and lab investigations following strict sanitation protocols.</p>
+</div>
+<!-- Highlight 2 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary/30 hover:shadow-sm transition-all group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">groups</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-2">Skilled Doctors</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant">Led by Dr. Deepak Bhan, our experienced professionals treat every patient with extreme care and empathy.</p>
+</div>
+<!-- Highlight 3 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary/30 hover:shadow-sm transition-all group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">precision_manufacturing</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-2">Advanced Machines</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant">Equipped with state-of-the-art dental technology and testing machinery for high accuracy and comfort.</p>
+</div>
+<!-- Highlight 4 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary/30 hover:shadow-sm transition-all group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">clean_hands</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-2">Full Sanitation Protocol</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant">An immaculately clean and hygienic environment that aligns perfectly with safety and health regulations.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface" id="testimonials">
+<div class="max-w-container-max-width mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Patient Stories</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Read real feedback from visitors who trust our clinic for their healthcare needs.</p>
+</div>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-6 pb-8 snap-x">
+<!-- Review 1 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-surface-container-highest/20 p-8 rounded-[1rem] border border-outline-variant/20 snap-start flex flex-col justify-between h-full">
+<div>
+<div class="flex text-[#FFB400] mb-6">
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-8 italic">"Supreme Dental Clinic is an absolute gem! From the moment I walked in, I was greeted warmly which made me feel right at home. The clinic itself is modern and immaculately clean, which immediately put me at ease."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-primary">RB</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface">Rahul Bhat</h4>
+<span class="font-body-md text-[12px] text-on-surface-variant">Local Guide</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-surface-container-highest/20 p-8 rounded-[1rem] border border-outline-variant/20 snap-start flex flex-col justify-between h-full">
+<div>
+<div class="flex text-[#FFB400] mb-6">
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-8 italic">"Supreme dental clinic and laboratory provides excellent facilities following proper sanitation protocol..The doctors and technicians are highly skilled who treat with extreme care and empathy. Highly recommended for all dental procedures and lab tests."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-primary">MW</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface">Monish Wattal</h4>
+<span class="font-body-md text-[12px] text-on-surface-variant">Patient Review</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-surface-container-highest/20 p-8 rounded-[1rem] border border-outline-variant/20 snap-start flex flex-col justify-between h-full">
+<div>
+<div class="flex text-[#FFB400] mb-6">
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-8 italic">"One of the best dental clinic you will find in the area. Advanced machines, full hygiene and knowledgeable doctor. I highly recommend to visit this clinic in case you look for a good dental clinic."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-primary">AK</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface">Akshay Koul</h4>
+<span class="font-body-md text-[12px] text-on-surface-variant">Local Guide</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Contact Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low border-t border-outline-variant/20" id="contact">
+<div class="max-w-container-max-width mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Contact Info -->
+<div class="flex flex-col gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Visit Our Clinic</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We are situated in a strategic location with a friendly atmosphere. Contact us today to plan your check-up or test.</p>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">Clinic Address</h4>
+<p class="font-body-md text-on-surface-variant">#2 shantipuram lower, Roop Nagar,<br/>Jammu, Jammu and Kashmir 181205</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">Phone Number</h4>
+<a class="font-body-md text-primary hover:underline" href="tel:07006323567">07006323567</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">Clinic Hours</h4>
+<p class="font-body-md text-on-surface-variant">Mon - Sat: 10:00 AM - 8:00 PM<br/>Sunday: Closed</p>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex flex-wrap gap-4">
+<a class="flex-1 min-w-[200px] flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-label-sm text-label-sm hover:bg-[#20bd5a] transition-all" href="https://wa.me/9107006323567">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                            WhatsApp Us
+                        </a>
+<a href="tel:07006323567" class="flex-1 min-w-[200px] flex items-center justify-center gap-2 bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-[20px]">event</span>
+                            Book Appointment
+                        </a>
+</div>
+</div>
+<!-- Map -->
+<div class="rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm h-[450px] relative bg-surface-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53682.40643307892!2d74.74754624863282!3d32.76174350000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e85b20722be9f%3A0xd331dd73bad4cab4!2sSUPREME%20DENTAL%20CLINIC%20%26%20CLINICAL%20LABORATORY!5e0!3m2!1sen!2sin!4v1779615270907!5m2!1sen!2sin" class="absolute inset-0 grayscale contrast-125 opacity-80 mix-blend-multiply hover:grayscale-0 hover:opacity-100 transition-all duration-500" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest w-full py-12 mt-auto border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-6 max-w-container-max-width mx-auto">
+<div class="flex flex-col gap-4">
+<a class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-2" href="#">
+<span class="material-symbols-outlined fill text-primary">dentistry</span>
+                    Supreme Dental Clinic &amp; Lab
+                </a>
+<p class="font-body-md text-on-surface-variant max-w-xs">Providing stellar dental care and precise diagnostics in Jammu with a focus on hygiene, expert skills, and up-to-date tools.</p>
+</div>
+<div class="flex flex-col gap-3 md:pl-12">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-2">Quick Links</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4 items-start md:items-end">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-2">Connect Directly</h4>
+<a class="font-body-md text-primary font-bold hover:underline" href="tel:07006323567">Call: 07006323567</a>
+</div>
+</div>
+<div class="max-w-container-max-width mx-auto px-6 mt-12 pt-6 border-t border-outline-variant/30 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2026 Supreme Dental Clinic &amp; Clinical Laboratory. All rights reserved.</p>
+<button class="text-primary font-label-sm text-label-sm hover:underline flex items-center gap-1" onclick="window.scrollTo(0,0)">
+                Back to top <span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+</button>
+</div>
+</footer>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+
+    // Toggle menu visibility
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+    });
+
+    // Close menu when a link is clicked
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+        });
+    });
+</script>
+</body></html>
